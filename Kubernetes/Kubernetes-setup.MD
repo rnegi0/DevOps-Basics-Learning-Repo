@@ -58,6 +58,19 @@
    kops create cluster --cloud=aws --zones=ap-south-1b --name=demo.k8s.galaxy.net --dns-zone=valaxy.net --dns private 
     ```
 
+NOTE:-
+
+Cluster configuration has been created.
+
+Suggestions:
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster demo.k8s.galaxy.net
+ * edit your node instance group: kops edit ig --name=demo.k8s.galaxy.net nodes
+ * edit your master instance group: kops edit ig --name=demo.k8s.galaxy.net master-ap-south-1b
+
+Finally configure your cluster with: kops update cluster --name demo.k8s.galaxy.net --yes
+
+
 1. Create kubernetes cluser
     ```sh
     kops update cluster demo.k8s.galaxy.net --yes
