@@ -9,11 +9,11 @@
       chdir: /opt/k8s-lab
 
   - name: create tag to image
-    command: docker tag simple-devops-image rnegi0/simple-devops-image
+    command: docker tag simple-devops-image negirabindra/simple-devops-image
 
   - name: push image on to dockerhub
-    command: docker push rnegi0/simple-devops-image
+    command: docker push negirabindra/simple-devops-image
 
   - name: remove docker images form ansible server
-    command: docker rmi simple-devops-image:latest rnegi0/simple-devops-image
+    command: docker rmi simple-devops-image:latest negirabindra/simple-devops-image
     ignore_errors: yes
