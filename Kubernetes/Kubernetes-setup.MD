@@ -75,6 +75,19 @@ Finally configure your cluster with: kops update cluster --name demo.k8s.galaxy.
     ```sh
     kops update cluster demo.k8s.galaxy.net --yes
     ```
+    
+    
+kops has set your kubectl context to demo.k8s.galaxy.net
+
+Cluster is starting.  It should be ready in a few minutes.
+
+Suggestions:
+ * validate cluster: kops validate cluster --wait 10m
+ * list nodes: kubectl get nodes --show-labels
+ * ssh to the master: ssh -i ~/.ssh/id_rsa ubuntu@api.demo.k8s.galaxy.net
+ * the ubuntu user is specific to Ubuntu. If not using Ubuntu please use the appropriate user based on your OS.
+ * read about installing addons at: https://kops.sigs.k8s.io/operations/addons.
+
 
 1. Validate your cluster
      ```sh
