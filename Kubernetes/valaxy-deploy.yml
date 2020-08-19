@@ -1,11 +1,11 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: valaxy-deployment
+  name: galaxy-deployment
 spec:
   selector:
     matchLabels:
-      app: valaxy-devops-project
+      app: galaxy-devops-project
   replicas: 2 # tells deployment to run 2 pods matching the template
   strategy:
     type: RollingUpdate
@@ -16,11 +16,11 @@ spec:
   template:
     metadata:
       labels:
-        app: valaxy-devops-project
+        app: galaxy-devops-project
     spec:
       containers:
-      - name: valaxy-devops-project
-        image: rnegi0/simple-devops-image
+      - name: galaxy-devops-project
+        image: negirabindra/simple-devops-image
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
