@@ -70,3 +70,4 @@ Please follow below steps to install docker CE on CentoOS server instance. For R
    ```sh
    sudo docker run hello-world
    ```
+ 
