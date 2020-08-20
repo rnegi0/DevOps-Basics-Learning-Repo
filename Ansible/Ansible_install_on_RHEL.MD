@@ -61,4 +61,4 @@
 1. Run ansible command as ansadmin user it should be successful (Master)
    ```sh 
    ansible all -m ping
-   ```
+   ``` 
