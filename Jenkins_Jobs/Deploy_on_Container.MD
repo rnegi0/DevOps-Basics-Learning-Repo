@@ -10,7 +10,7 @@
    # Pull tomcat latest image from dockerhub 
    From tomcat
    # Maintainer
-   MAINTAINER "AR Shankar" 
+   MAINTAINER "RABINDRA NEGI" 
 
    # copy war file on to container 
    COPY ./webapp.war /usr/local/tomcat/webapps
@@ -37,7 +37,7 @@ Enable connection between Docker-host and Jenkins
      - Copy from: `Deploy_on_Docker_Host`
      
    - *Source Code Management:*
-      - Repository: `https://github.com/yankils/hello-world.git`
+      - Repository: `https://github.com/rnegi0/hello-world.git`
       - Branches to build : `*/master`  
    - *Poll SCM* :      - `* * * *`
 
