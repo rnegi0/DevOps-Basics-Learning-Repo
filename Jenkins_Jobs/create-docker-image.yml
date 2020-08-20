@@ -8,7 +8,7 @@
     args:
       chdir: /opt/docker
 
-# option-2 : creating docker image using docker_image module 
+# option-2 : creating docker image using docker_image module  
 
 #  tasks:
 #  - name: building docker image
