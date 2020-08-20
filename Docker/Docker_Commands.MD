@@ -64,4 +64,4 @@ docker rm <container_id>
 12. login to a docker container
 ```sh
 docker exec -it <container_Name> /bin/bash
-```
+``` 
