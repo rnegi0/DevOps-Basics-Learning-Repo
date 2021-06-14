@@ -1,4 +1,4 @@
-# Simple DevOps Project 
+# DevOps Basics Learning Repo 
 
 This Repository is a collection of Implementation documents. 
 
